@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha(){
+        document.write("<br>")
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var continuar = "s";
+    var idadeTotal = 0;
+    var idadeInformada = 0;
+    var contador = 0;
+    var media = 0;
+
+    while (continuar != "n") {
+        idadeInformada = parseInt(prompt("Digite a idade do familiar:"));
+        idadeTotal = idadeTotal + idadeInformada;
+        contador++;
+        continuar = prompt("Quer informar outro familiar? [ s / n ]");
+        
+        if (continuar != "s" && continuar != "n") {
+            while (continuar != "s" && continuar != "n"){
+                alert("Você não digitou uma opção válida! [ s / n ]");
+                continuar = prompt("Quer informar outro familiar? [ s / n ]");
+            }
+        }
+    }
+
+    media = idadeTotal / contador;
+    mostra("O total das idades é: " + idadeTotal);
+    mostra("A quantidade de familiares digitados foram: " + contador);
+    mostra("A média das idades é: " + Math.round(media));
+</script>

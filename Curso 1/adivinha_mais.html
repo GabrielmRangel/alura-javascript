@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+    <input type="number"> <button>Compare com o número secreto</button>
+<script>
+    var segredo = Math.round(Math.random() * 10);
+    var chute = document.querySelector("input");
+
+    function verifica() {
+        if (chute.value == segredo) {
+        alert("Você acertou!");
+        } else {
+            alert("Você errou!");
+            alert("Numero secreto: " + segredo);
+        }
+    }
+    
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+</script>

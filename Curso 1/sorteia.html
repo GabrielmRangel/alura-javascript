@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha(){
+        document.write("<br>")
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia(numeroMax){
+        return Math.round(Math.random() * numeroMax);
+    }
+
+    document.write("-----------------------------------<BR>");
+    document.write("   JOGO DA ADIVINHAÇÃO!   <BR>");
+    document.write("-----------------------------------<BR>");
+    var numeroMax = parseInt(prompt("Digite um número máximo: "));
+    var numeroSorteado = sorteia(numeroMax);
+    var chute = parseInt(prompt("Tente adivinhar o número de 1 a " + numeroMax));
+
+    mostra("O número sorteado foi: " + numeroSorteado);
+    if (chute == numeroSorteado) {
+        mostra("Você acertou!");
+    } else if (chute < numeroSorteado) {
+        mostra("Você errou! Seu chute foi menor que o sorteado.");
+        document.write("Meu pau na sua mão!");
+    } else {
+        mostra("Você errou! Seu chute foi maior que o sorteado.");
+        document.write("Meu pau na sua mão!");
+    }
+</script>

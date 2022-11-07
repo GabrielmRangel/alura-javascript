@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha(){
+        document.write("<br>")
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var multiplicador = parseInt(prompt("Digite o número a ser multiplicado:"));
+    var resultado = 0;
+
+    mostra("Tabuada do " + multiplicador);
+
+    for (var denominador = 1; denominador <= 10; denominador++) {
+        resultado = multiplicador * denominador;
+        mostra(multiplicador + "x" + denominador + " = " + resultado);
+    }
+</script>
