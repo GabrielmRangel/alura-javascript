@@ -36,13 +36,13 @@ function validaPaciente(paciente){
         adicionaPaciente = false;
     } 
 
-    if (paciente.peso == ""){
-        alert("Peso não preenchido!");
+    if (paciente.peso == "" || paciente.peso <= 0){
+        alert("Peso não preenchido corretamente!");
         adicionaPaciente = false;
     }
 
-    if (paciente.altura == ""){
-        alert("Altura não preenchida!");
+    if (paciente.altura == "" || paciente.altura <= 0){
+        alert("Altura não preenchida corretamente!");
         adicionaPaciente = false;
     }
 
