@@ -135,6 +135,7 @@ button[disabled=disabled], button:disabled {
 
 .paciente-invalido {
 	background-color: lightcoral;
+	color: white;
 }
 
 .fadeOut{
@@ -152,4 +153,24 @@ button[disabled=disabled], button:disabled {
 
 .invisivel{
 	display: none;
+}
+
+.grau-magreza{
+	background-color: lightblue;
+}
+
+.grau-normal{
+	background-color: lightgreen;
+}
+
+.grau-sobrepeso{
+	background-color: lightyellow;
+}
+
+.grau-obesidade{
+	background-color: orange;
+}
+
+.grau-obesidade-grave{
+	background-color: lightcoral;
 }
